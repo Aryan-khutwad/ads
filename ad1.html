@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Chic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        #products, #more-products, #featured {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .product {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        #featured, #testimonials, #extra-banner, #contact {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        #featured h2, #testimonials h2, #extra-banner h2, #contact h2 {
+            text-align: center;
+        }
+        #testimonials p {
+            font-style: italic;
+            text-align: center;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contact input, #contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>URBAN CHIC</h1>
+    </header>
+
+    <nav>
+        <a href="#showcase">Home</a>
+        <a href="#products">Products</a>
+        <a href="#more-products">More Products</a>
+        <a href="#featured">Featured</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="showcase">
+	<img src="photos/logo.png" width="300" height="300">
+        <h2>Discover the latest trends in fashion</h2>
+        <p>Explore our newest collection of clothing and accessories.</p>
+    </section>
+
+    <div class="container">
+        <section id="products">
+            <div class="product">
+                <img src="photos/top.jpg">
+		<h3>Top wear</h3>
+		<p>Perfect for daily wear.</p>
+                
+            </div>
+            <div class="product">
+                <img src="photos/outer.jpg" alt="Jackets">
+                <h3>Outer</h3>
+                <p>Perfect for a relaxed day out.</p>
+            </div>
+            <div class="product">
+                <img src="photos/bottom.jpg" alt="Denim Jeans">
+                <h3>Bottom wear</h3>
+                <p>Comfortable and stylish jeans.</p>
+            </div>
+        </section>
+
+        <section id="more-products">
+            <div class="product">
+                <img src="photos/ethnic.jpg">
+                <h3>Ethnic</h3>
+                <p>Embrace tradition with style.</p>
+            </div>
+            <div class="product">
+                <img src="photos/coord.jpg" alt="party wears">
+                <h3>Party wears</h3>
+                <p>Dress to Impress, Shine to Mesmerize.</p>
+            </div>
+            <div class="product">
+                <img src="photos/dress.jpg" alt="co-ord">
+                <h3>Co-ord</h3>
+                <p>Professional and polished, suitable for presentations or internships.</p>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Winter Wear</h2>
+            
+            <div class="product">
+                <img src="photos/featured1.jpg" alt="">
+               
+                <p>A must-have item for this season.</p>
+            </div>
+            <div class="product">
+                <img src="photos/featured2.jpg" alt="Featured Product 2">
+                
+                <p>Get this trending product now!</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>About our products</h2>
+            <p>Urban Chic is a trendy and vibrant clothing brand designed exclusively for college girls who love to express themselves through fashion. Our brand celebrates individuality, confidence, and style, offering a wide range of apparel that’s perfect for both everyday campus life and special occasions. From casual streetwear to chic party outfits, Urban Chic ensures that every girl can find something that resonates with her unique personality.</p>
+            <p>"I always find something unique and trendy. Great customer service too!"</p>
+        </section>
+
+        <section id="extra-banner">
+            <h2>Special Offer</h2>
+            <p>Sign up for our newsletter to get exclusive discounts and early access to new collections!</p>
+        </section>
+
+    </div>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Urban Chic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
